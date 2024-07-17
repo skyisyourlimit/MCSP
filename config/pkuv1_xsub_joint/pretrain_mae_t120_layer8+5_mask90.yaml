@@ -43,4 +43,4 @@ lr: 1e-3
 min_lr: 5e-4
 weight_decay: 0.05
 mask_ratio: 0.9
-motion_aware_tau: 0.80
+motion_aware_tau: 0.

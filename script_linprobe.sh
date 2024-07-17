@@ -28,7 +28,7 @@ python -m torch.distributed.launch --nproc_per_node=2 --master_port 12345 main_l
 --finetune ./output_dir/ntu60_xview_joint/pretrain_mae_t120_layer8+3_mask90_ep400_noamp/checkpoint-399.pth \
 --dist_eval
 
-# NTU-60 xsub
+# NTU-60 xview
 python -m torch.distributed.launch --nproc_per_node=2 --master_port 12345 main_linprobe.py \
 --config ./config/ntu60_xview_joint/linprobe_t120_layer8.yaml \
 --output_dir ./output_dir/ntu60_xview_joint/linear_mamp_t120_layer8+3_mask90_tau0.80_ep400_400 \

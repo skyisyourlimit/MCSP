@@ -15,13 +15,15 @@ train_feeder_args:
   bone: False
 
 # model
-model: model_mamp.transformer.Transformer
+model: model_mamp.transformer_pretrain.Transformer #重建余弦相似度，一个encoder
+#model: model_mamp.transformer.Transformer #原始代码，重建运动信息
+#model: model_mamp.siamese_transformer.Transformer #孪生transformer，两个encoder
 model_args:
   dim_in: 3
   dim_feat: 256
   decoder_dim_feat: 256
-  depth: 8
-  decoder_depth: 5
+  depth: 8 #encoder深度
+  decoder_depth: 5 #decoder深度
   num_heads: 8
   mlp_ratio: 4
   num_frames: 120
@@ -43,4 +45,4 @@ lr: 1e-3
 min_lr: 5e-4
 weight_decay: 0.05
 mask_ratio: 0.9
-motion_aware_tau: 0.75
+motion_aware_tau: 0.

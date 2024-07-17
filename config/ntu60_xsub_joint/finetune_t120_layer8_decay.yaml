@@ -46,7 +46,9 @@ model_args:
 # training
 epochs: 100
 warmup_epochs: 5
-batch_size: 24
-lr: 5e-4
+batch_size: 6
+lr: 5e-4 #作者提供的源代码中的设置
+#lr: 3e-4 #作者论文中描述的设置，The learning rate is linearly increased to 3e-4 from 0 in the first 5 warm-up epochs and then
+#min_lr: 1e-5 #decreased to 1e-5 by the cosine decay schedule
 layer_decay: 0.8
 smoothing: 0.1

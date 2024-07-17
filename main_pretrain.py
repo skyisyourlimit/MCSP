@@ -8,6 +8,7 @@
 # DeiT: https://github.com/facebookresearch/deit
 # BEiT: https://github.com/microsoft/unilm/tree/master/beit
 # --------------------------------------------------------
+#这段代码定义了一个预训练的主程序，用于加载数据、构建模型、设置优化器和损失函数，并进行训练
 import argparse
 import datetime
 import json
@@ -44,7 +45,7 @@ def import_class(name):
     return mod
 
 
-def get_args_parser():
+def get_args_parser(): #用于获取参数解析器，并添加了一系列预训练所需的参数
     parser = argparse.ArgumentParser('MAE pre-training', add_help=False)
     parser.add_argument('--config', default='./config/ntu60_xsub_joint_pretrain_debug.yaml', help='path to the configuration file')
 
@@ -65,7 +66,7 @@ def get_args_parser():
     
     parser.add_argument('--motion_stride', default=1, type=int,
                         help='stride of motion to be predicted.')
-    parser.add_argument('--motion_aware_tau', default=0.75, type=float,
+    parser.add_argument('--motion_aware_tau', default=0., type=float,
                         help='temperature of motion aware masking.')      
                         
     parser.add_argument('--mask_ratio_inter', default=0.75, type=float,

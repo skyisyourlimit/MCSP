@@ -46,5 +46,5 @@ model_args:
 # training
 epochs: 100
 warmup_epochs: 0
-batch_size: 64
+batch_size: 128
 lr: 0.1
