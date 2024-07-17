@@ -17,7 +17,7 @@ This repository includes Python (PyTorch) implementation of the MCSP.
 - pyyaml==6.0.1
   
 # Data preprocessing and code execution
-Please refer to [MAMP](https://github.com/maoyunyao/MAMP) for the code execution process.
+Please refer to [MAMP](https://github.com/maoyunyao/MAMP) for the data preprocessing and code execution process.
 
 # Acknowledgment
 The framework of our code is based on [MAMP](https://github.com/maoyunyao/MAMP).
