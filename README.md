@@ -1,6 +1,4 @@
-# Masked Cosine Similarity Prediction for Self-supervised Skeleton-based Action Representation Learning
-
-Ziliang Ren, Ronggui Liu, Yong Qin, Qieshi Zhang
+# The code of the paper "Masked Cosine Similarity Prediction for Self-supervised Skeleton-based Action Representation Learning"
 
 This repository includes Python (PyTorch) implementation of the MCSP.
 
@@ -16,8 +14,8 @@ This repository includes Python (PyTorch) implementation of the MCSP.
 - numpy==1.24.3
 - pyyaml==6.0.1
   
-# Data preprocessing and code execution
-Please refer to [MAMP](https://github.com/maoyunyao/MAMP) for the data preprocessing and code execution process.
+# Data preparation and code execution
+Please refer to [MAMP](https://github.com/maoyunyao/MAMP) for the data preparation and code execution process.
 
 # Acknowledgment
 The framework of our code is based on [MAMP](https://github.com/maoyunyao/MAMP).
