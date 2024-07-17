@@ -16,7 +16,8 @@ tqdm==4.64.0
 numpy==1.24.3
 pyyaml==6.0.1
 
-# Please refer to MAMP (https:// github.com/maoyunyao/MAMP) for the code execution process
+# Code execution
+Please refer to MAMP (https:// github.com/maoyunyao/MAMP) for the code execution process
 
 # Acknowledgment
 The framework of our code is based on https:// github.com/maoyunyao/MAMP.
